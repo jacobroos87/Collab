@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container mt-5 mb-5">
+    <h1>Contact Us</h1>
+    <div class="row">
+        <div class="col s12 m12 l6">
+            <div class="col s6">
+                Contact Info
+                0658463532156
+                test@test.com
+            </div>
+            <div class="col s6">
+                Contact Info
+                0658463532156
+                test@test.com
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <form class="col s12 m12 l6">
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input id="first_name" type="text" class="validate" minlength="2" maxlength="20" required>
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input id="last_name" type="text" class="validate" minlength="2" maxlength="20" required>
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input id="email" type="email" class="validate" minlength="5" maxlength="40" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input id="contact_number" type="tel" class="validate" minlength="11" maxlength="11">
+                    <label for="contact_number">Contact Number</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input id="company" type="text" class="validate" minlength="5" maxlength="40">
+                    <label for="last_name">Company</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input id="your_site" type="text" class="validate" minlength="5" maxlength="40">
+                    <label for="your_site">Your Site</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" minlength="5" maxlength="250"></textarea>
+                        <label for="textarea1">How did you hear about us?</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea" minlength="5" maxlength="250"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+</div>
+
+{% endblock %}
