@@ -52,6 +52,32 @@ nav {
     width: 90%;
 }
 
+#hero-landing-container {
+    height: 100vh;
+
+}
+
+#flower-logo {
+    padding: 40px;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    margin-left: 100px;
+}
+
+.underline-1 {
+    height: 1rem;
+    background-color: #C59F60;
+    width: 220px;
+}
+
+.underline-2 {
+    height: 1rem;
+    background-color: #B2565D;
+    width: 220px;
+    margin-left: 180px;
+}
+
 
 
 /* BOOTSTRAP POSITIONING CLASSES */
