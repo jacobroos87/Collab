@@ -29,6 +29,28 @@ nav {
     background-color: #16243D;
 }
 
+.bg-white {
+    background-color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+
+/* Borders */
+
+.rounded-0 {
+    border-radius: unset;
+}
+
+.rounded-1 {
+    border-radius: 10px;
+}
+
+.rounded-2 {
+    border-radius: 20px;
+}
 
 
 
@@ -78,10 +100,88 @@ nav {
     margin-left: 180px;
 }
 
+/* ----HOME PAGE =  Portfolio Links - hover overlay effect -- */
+
+.portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(122, 122, 122, 0.9);
+}
+.portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+
+.portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-item-caption-content{
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+
 
 
 /* BOOTSTRAP POSITIONING CLASSES */
 
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+.align-items-end {
+  align-items: flex-end !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.align-items-baseline {
+  align-items: baseline !important;
+}
+
+.align-items-stretch {
+  align-items: stretch !important;
+}
 
 .w-25 {
   width: 25% !important;
