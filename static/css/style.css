@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #7D7D7D;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
-    background-color: #7D7D7D;
+    background-color: #16243D;
 }
 
 .container {
-    width: 80%;
+    width: 95%;
 }
 
 .banner {
@@ -37,6 +41,10 @@ nav {
     color: white;
 }
 
+.bg-navy {
+    background-color: #16243D;
+}
+
 
 /* Borders */
 
@@ -52,7 +60,9 @@ nav {
     border-radius: 20px;
 }
 
-
+.space {
+    margin: 10px;
+}
 
 /* HOMEPAGE MEDIA QUERIES */
 
@@ -76,28 +86,198 @@ nav {
 
 #hero-landing-container {
     height: 100vh;
+}
 
+.navbar img {
+    width: 200px;
+    transition: 0.6s;
+}
+
+.navbar-nav .nav-item {
+    margin: 0px 10px;
+    font-size: clamp(1rem, -0.1rem + 1.333333vw, 1.5rem);
+}
+
+a.middle
+{
+    position: relative;
+}
+
+.nav-item {
+    padding-top: 5px;
+}
+
+.nav-item.active {
+    padding-top: 0px;
+}
+
+.navbar-nav .active {
+  border-top: 5px solid #842D34;
+  border-bottom: 5px solid white;
+}
+
+.nav-item.active .middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 5px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -5px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.underline-active {
+  background-color: #FFF;
+}
+
+a.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 #flower-logo {
     padding: 40px;
     object-fit: contain;
-    height: 100%;
-    width: 100%;
+    height: 55%;
+    width: 55%;
     margin-left: 100px;
+    margin-top: 35vh;
+}
+
+.website-heading {
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 34px;
+    margin-left: 220px;
+    margin-top: 50vh;
+    border-bottom: 5px solid #842D34;
+    width: 300px;
+}
+
+.website-blurb {
+    color: #fff;
+    margin-left: 220px;
+    font-size: 24px;
 }
 
 .underline-1 {
-    height: 1rem;
+    height: 5px;
     background-color: #C59F60;
     width: 220px;
 }
 
+.underline-1-full {
+    height: 5px;
+    background-color: #C59F60;
+    width: 50%;
+}
+
 .underline-2 {
-    height: 1rem;
+    height: 5px;
     background-color: #B2565D;
     width: 220px;
     margin-left: 180px;
+}
+
+.underline-2-full {
+    height: 5px;
+    background-color: #B2565D;
+    width: 50%;
+}
+
+#navbarNav ul li a {
+    color: white;
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+/* Slide elements */
+
+
+#portfolio-item-2, #portfolio-item-3, #portfolio-item-1, .info  {
+    opacity: 0;
+}
+
+.come-in {
+  transform: translateY(150px);
+  opacity: 0;
+  animation: come-in 1.2s ease forwards;
+}
+
+.come-up {
+  transform: translateY(200px);
+  animation: come-in 2s ease forwards;
+}
+
+.come-in-left {
+  transform: translateY(200px);
+  animation: come-in 1.5s ease forwards;
+}
+
+.come-in-right {
+  transform: translateY(200px);
+  animation: come-in 2.5s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { 
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+/*  PORTFOLIO PAGE   */
+
+#hero-landing-portfolio {
+    height: 100vh;
+    padding-top: 330px;
+}
+
+/*  PORTFOLIO PAGE   */
+
+#hero-landing-portfolio {
+    height: 100vh;
+    padding-top: 330px;
+}
+
+/* NAVBAR */
+
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #16243d;
+  padding: 50px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.6s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
 }
 
 /* ----HOME PAGE =  Portfolio Links - hover overlay effect -- */
@@ -131,8 +311,84 @@ nav {
     justify-content: center;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: #16243D;
+  color: #fafafa;
+  min-height: 120px;
+  padding-top: 30px;
+
+  text-align: center;
+}
+
+.social-links li a i {
+  width: 50px;
+  height: 50px;
+  padding: 20px 0;
+  border-radius: 50%;
+  font-size: 25px;
+  line-height: 7px;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+}
+
+.social-links li a i:hover {
+  background: #C59F60;
+}
+
+/* Back to top button */
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+	bottom: 25px;
+	right: 15px;
+    cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+    z-index: 1000;
+}
+
+#back-to-top img {
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#back-to-top img:hover {
+    transform: scale(1.2);
+}
 
 
+#back-to-top:hover,
+#back-to-top:focus {
+	color: #fff;
+}
+
+
+
+#flower-background {
+    object-fit: contain;
+    position: absolute;
+    height: 90%;
+    opacity: 0.5;
+    transform: scale(2);
+    z-index: -100;
+}
+
+#contact-us-display {
+    padding-top: 20px;
+}
 
 
 

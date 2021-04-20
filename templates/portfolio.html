@@ -1,29 +1,144 @@
 {% extends "base.html" %}
+{% block nav_portfolio %}active{% endblock %}
 {% block content %}
 
-<div class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col s12 m6">
-            <h2>Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni esse ipsum consectetur laboriosam
-                soluta dolores consequatur voluptatibus libero ab.
-                Suscipit accusantium, aliquam necessitatibus officia maiores perferendis architecto iusto. Suscipit
-                neque, rerum, voluptates veniam doloribus eveniet
-                iusto alias incidunt aliquid ipsum esse porro quod ab? Quod commodi at excepturi suscipit nisi,
-                molestiae corporis, labore fugit facere voluptatum
-                quaerat iste nesciunt accusantium sint vitae? Blanditiis delectus a esse maxime cumque accusamus id,
-                numquam velit voluptatum, pariatur impedit
-                voluptates eum! Delectus nemo nam, deserunt odit tempore quas qui veniam, placeat sunt amet quo enim
-                vero alias quia explicabo voluptatum beatae officia adipisci?</p>
-        </div>
-        <div class="col s12 m6">
-            <img src="{{ url_for('static', filename='img/feet.jpg') }}" class="responsive-img" alt="Feet">
+<div class="container-fluid bg-navy mt-5 mb-5">
+    <div id="hero-landing-portfolio" class="container">
+        <div class="row">
+            <div class="col-md-6 text-white mt-5">
+                <h2>Portfolio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed magni esse ipsum consectetur laboriosam
+                    soluta dolores consequatur voluptatibus libero ab.
+                    Suscipit accusantium, aliquam necessitatibus officia maiores perferendis architecto iusto. Suscipit
+                    neque, rerum, voluptates veniam doloribus eveniet
+                    iusto alias incidunt aliquid ipsum esse porro quod ab? Quod commodi at excepturi suscipit nisi,
+                    molestiae corporis, labore fugit facere voluptatum
+                    quaerat iste nesciunt accusantium sint vitae? Blanditiis delectus a esse maxime cumque accusamus id,
+                    numquam velit voluptatum, pariatur impedit
+                    voluptates eum! Delectus nemo nam, deserunt odit tempore quas qui veniam, placeat sunt amet quo enim
+                    vero alias quia explicabo voluptatum beatae officia adipisci?</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="{{ url_for('static', filename='img/flower-logo.png') }}" class="img-fluid w-75" alt="Feet">
+            </div>
         </div>
     </div>
 </div>
 
-<div class="row bg-blue banner">
-
+<div class="container">
+    <section class="mt-5 mb-5">
+        <h2>PORTFOLIO</h2>
+        <div class="underline-1 mb-4 ml-5"></div>
+        <div class="row">
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_2.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_3.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5 mb-5">
+        <div class="row">
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_2.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_3.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5 mb-5">
+        <div class="row">
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_2.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_3.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 

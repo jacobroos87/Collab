@@ -1,134 +1,222 @@
 {% extends "base.html" %}
+{% block nav_home %}active{% endblock %}
 {% block content %}
 
-<div class="container">
+<div class="container-fluid bg-navy">
     <!-- HERO LANDING SECTION -->
     <div id="hero-landing-container">
         <div class="row">
-            <div class="col l5">
-                <div id="home-nav">
-                    <h1>Alternate Nav element</h1>
-                </div>
+            <div class="col-lg-6">
+                <h1 class="website-heading">Web Design Agency</h1>
+                <h2 class="website-blurb">We combine the skills of talented in-house web designers, developers, search
+                    and social strategists to deliver a unified service for hundreds of clients throughout London and
+                    the UK.</h2>
             </div>
-            <div class="col l7">
+            <div class="col-lg-6">
                 <div id="logo-container">
                     <img id="flower-logo" src="static/img/flower-logo.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+</div>
 
+<div class="container">
     <!-- COMPANY INFO/OFFER SECTION -->
-    <section id="what_we_do">
-    <div class="row">
-        <div class="col s12 l6">
-            <div class="card card-homepage bg-light p-2 mr-4">
-                <div class="card-image">
-                    <!--<img src="#">-->
-                    <span class="card-title"></span>
-                </div>
-                <div class="card-content">
-                    <p>What we do information</p>
+    <section id="what_we_do" class="mt-5 mt-2">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="card card-homepage bg-light p-2 mr-4">
+                    <div class="card-image">
+                        <!--<img src="#">-->
+                        <span class="card-title"></span>
+                    </div>
+                    <div class="card-content">
+                        <p>What we do information</p>
+                    </div>
                 </div>
             </div>
+            <div id="info-1" class="col l6 info">
+                <h3 class="mt-5 mb-2">What you get</h3>
+                <div class="underline-1 ml-5 mb-2"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dignissimos cumque reprehenderit
+                    maxime, aliquid ratione sit, alias doloribus reiciendis vitae at dolores perferendis magni vero
+                    recusandae sint nobis perspiciatis quibusdam?</p>
+                <div class="underline-2"></div>
+            </div>
         </div>
-        <div class="col l6">
-            <h3 class="mt-5 text-white">What you get</h3>
-            <div class="underline-1 ml-5"></div>
-            <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dignissimos cumque reprehenderit maxime, aliquid ratione sit, alias doloribus reiciendis vitae at dolores perferendis magni vero recusandae sint nobis perspiciatis quibusdam?</p>
-            <div class="underline-2"></div>
-        </div>
-    </div>
     </section>
-    
-    <div class="row flex-s">
-        <div class="col l6 box-a">
-            <h3 class="mt-5 text-white">What we offer</h3>
-            <div class="underline-1 ml-5"></div>
-            <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dignissimos cumque reprehenderit maxime, aliquid ratione sit, alias doloribus reiciendis vitae at dolores perferendis magni vero recusandae sint nobis perspiciatis quibusdam?</p>
-            <div class="underline-2"></div>
-        </div>
-        <div class="col s12 l6 box-b">
-            <div class="card card-homepage bg-light p-2 ml-4">
-                <div class="card-image">
-                    <!--<img src="#">-->
-                    <span class="card-title"></span>
-                </div>
-                <div class="card-content">
-                    <p>List of services</p>
+
+    <section id="list_of_services" class="mt-5 mb-2">
+        <div class="row flex-s">
+            <div class="col-12 col-lg-6 box-a info">
+                <h3 class="mt-5">What we offer</h3>
+                <div class="underline-1 ml-5 mb-2"></div>
+                <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dignissimos cumque
+                    reprehenderit maxime, aliquid ratione sit, alias doloribus reiciendis vitae at dolores perferendis
+                    magni vero recusandae sint nobis perspiciatis quibusdam?</p>
+                <div class="underline-2"></div>
+            </div>
+            <div class="col-12 col-lg-6 box-b">
+                <div class="card card-homepage bg-light p-2 ml-4">
+                    <div class="card-image">
+                        <!--<img src="#">-->
+                        <span class="card-title"></span>
+                    </div>
+                    <div class="card-content">
+                        <p>List of services</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col s12 l6">
-            <div class="card card-homepage bg-light p-2 mr-4">
-                <div class="card-image">
-                    <!--<img src="#">-->
-                    <span class="card-title"></span>
-                </div>
-                <div class="card-content">
-                    <p>Our Process</p>
+    </section>
+    <section id="our_process" class="mt-5 mb-2">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="card card-homepage bg-light p-2 mr-4">
+                    <div class="card-image">
+                        <!--<img src="#">-->
+                        <span class="card-title"></span>
+                    </div>
+                    <div class="card-content">
+                        <p>Our Process</p>
+                    </div>
                 </div>
             </div>
+            <div class="col-12 col-lg-6 info">
+                <h3 class="mt-5">Design Process</h3>
+                <div class="underline-1 ml-5 mb-2"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dignissimos cumque reprehenderit
+                    maxime, aliquid ratione sit, alias doloribus reiciendis vitae at dolores perferendis magni vero
+                    recusandae sint nobis perspiciatis quibusdam?</p>
+                <div class="underline-2"></div>
+            </div>
         </div>
-        <div class="col l6">
-            <h3 class="mt-5 text-white">Design Process</h3>
-            <div class="underline-1 ml-5"></div>
-            <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam dignissimos cumque reprehenderit maxime, aliquid ratione sit, alias doloribus reiciendis vitae at dolores perferendis magni vero recusandae sint nobis perspiciatis quibusdam?</p>
-            <div class="underline-2"></div>
-        </div>
-    </div>
+    </section>
 
     <!-- PORTFOLIO FEATURED SECTION -->
-    <h2 class="text-white">PORTFOLIO</h2>
-    <div class="underline-1 mb-4 ml-5"></div>
-    <div class="row">
-        <div class="col l4 s12">
-            <div class="item-wrapper rounded-1 bg-white p-3">
-                <div class="portfolio-item mx-auto">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">TEST 1</div>
+    <section class="mt-5 mb-5">
+        <h2>PORTFOLIO</h2>
+        <div class="underline-1 mb-4 ml-5"></div>
+        <div class="row">
+            <div id="portfolio-item-1" class="col-lg-4">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_1.jpg" alt="" />
                     </div>
-                    <img class="img-fluid" src="static/img/portfolio_example_1.jpg" alt="" />
+                </div>
+            </div>
+            <div id="portfolio-item-2" class="col-lg-4">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_2.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio-item-3" class="col-lg-4">
+                <div class="item-wrapper rounded-1 bg-blue p-3">
+                    <div class="portfolio-item mx-auto">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center">TEST 1</div>
+                        </div>
+                        <img class="img-fluid" src="static/img/portfolio_example_3.jpg" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col l4 s12">
-            <div class="item-wrapper rounded-1 bg-white p-3">
-                <div class="portfolio-item mx-auto">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">TEST 1</div>
-                    </div>
-                    <img class="img-fluid" src="static/img/portfolio_example_2.jpg" alt="" />
-                </div>
-            </div>
-        </div>
-        <div class="col l4 s12">
-            <div class="item-wrapper rounded-1 bg-white p-3">
-                <div class="portfolio-item mx-auto">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white">TEST 1</div>
-                    </div>
-                    <img class="img-fluid" src="static/img/portfolio_example_3.jpg" alt="" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <hr>
+    </section>
 
     <!-- CONTACT SECTION -->
-    <div class="row">
-        <div class="col m12">
+    <div class="row mt-5 mb-5">
+        <div class="col-12">
             <div>
-                <h3 class="center-align"> CONTACT US / GET IN TOUCH </h3>
+                <h3 class="text-center"> CONTACT US / GET IN TOUCH   <i class="far fa-address-book"></i></h3>
+                <div class="underline-2-full mt-3 mx-auto w-25"></div>
             </div>
         </div>
     </div>
+
+    <div class="container  mb-5" id="contact-us-display">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        Contact Info
+                        0658463532156
+                        test@test.com
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        Contact Info
+                        0658463532156
+                        test@test.com
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <form class="col-lg-12">
+                <div class="row">
+                    <div class="mb-3 col-lg-6">
+                        <input id="first_name" type="text" class="form-control" minlength="2" maxlength="20" required>
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                        <input id="last_name" type="text" class="form-control" minlength="2" maxlength="20" required>
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-lg-6">
+                        <input id="email" type="email" class="form-control" minlength="5" maxlength="40" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                        <input id="contact_number" type="tel" class="form-control" minlength="11" maxlength="11">
+                        <label for="contact_number">Contact Number</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-lg-6">
+                        <input id="company" type="text" class="form-control" minlength="5" maxlength="40">
+                        <label for="last_name">Company</label>
+                    </div>
+                    <div class="mb-3 col-lg-6">
+                        <input id="your_site" type="text" class="form-control" minlength="5" maxlength="40">
+                        <label for="your_site">Your Site</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-lg-12">
+                        <textarea id="textarea1" class="form-control" minlength="5" maxlength="250"></textarea>
+                        <label for="textarea1">How did you hear about us?</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-lg-12">
+                        <textarea id="message" class="form-control" minlength="5" maxlength="250"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
 
 
 </div>
+
 
 
 {% endblock %}
