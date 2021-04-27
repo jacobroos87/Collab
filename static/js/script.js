@@ -89,23 +89,33 @@ $(document).ready(function(){
   
     });
 
-    
 
     // remove home navlink bottom border if #what_we_do is active 
 
     var current = document.URL.split('#')[1];
 
-    if (current == 'what_we_do') {
-        $("#what-we-do-link").css("border-bottom", "5px solid white");
-        $("#home-link").css("border-bottom", "unset");
-        };
-    
     $("#what-we-do-link").click(function() {
         $(this).css("border-bottom", "5px solid white");
-        });
+        $("#home-link").css("border-bottom", "unset");
+        $("#contact-us-link").css("border-bottom", "unset");
+        $("#portfolio-link").css("border-bottom", "unset");
+    });
 
 
+    $("#portfolio-link").click(function() {
+        $(this).css("border-bottom", "5px solid white");
+        $("#home-link").css("border-bottom", "unset");
+        $("#contact-us-link").css("border-bottom", "unset");
+        $("#what-we-do-link").css("border-bottom", "unset");
+    });
 
+
+    $("#contact-us-link").click(function() {
+        $(this).css("border-bottom", "5px solid white");
+        $("#home-link").css("border-bottom", "unset");
+        $("#what-we-do-link").css("border-bottom", "unset");
+        $("#portfolio-link").css("border-bottom", "unset");
+    });
 
 
 });

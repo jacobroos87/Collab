@@ -14,12 +14,30 @@ nav {
     background-color: #16243D;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
 .container {
-    width: 95%;
+    width: 95% !important;
 }
 
 .banner {
     height: 450px;
+}
+
+.highlight {
+    font-size: 20px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.192);
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1750px;
+    }
 }
 
 
@@ -64,6 +82,10 @@ nav {
     margin: 10px;
 }
 
+.nav-underline {
+    border-bottom: 5px solid white;
+}
+
 /* HOMEPAGE MEDIA QUERIES */
 
 @media (max-width: 992px) {
@@ -80,7 +102,7 @@ nav {
 /* HOME PAGE */
 
 .card-homepage {
-    height: 20rem;
+    height: 27rem;
     width: 90%;
 }
 
